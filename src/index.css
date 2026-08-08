@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: #020617; /* slate-950 */
+  color: white;
+  font-family: Inter, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+:root{
+  --mouse-x:50%;
+  --mouse-y:50%;
+}
+
+.mouse-glow{
+
+  position:absolute;
+  inset:0;
+
+  background:
+    radial-gradient(
+      320px circle at var(--mouse-x) var(--mouse-y),
+      rgba(34,211,238,.18),
+      rgba(34,211,238,.08) 35%,
+      transparent 70%
+    );
+
+  transition:
+    background .06s linear;
+
+  will-change:background;
+}

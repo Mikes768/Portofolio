@@ -1,0 +1,202 @@
+/* ===========================================================
+   OCEAN THEME
+=========================================================== */
+
+:root.theme-day {
+
+  --bg: #F8FDFF;
+  --bg-secondary: #EEF9FF;
+  --bg-tertiary: #FFFFFF;
+
+  --surface: rgba(255,255,255,.72);
+  --surface-hover: rgba(255,255,255,.90);
+
+  --text: #1E293B;
+  --text-secondary: #475569;
+  --text-muted: #64748B;
+
+  --primary: #06B6D4;
+  --primary-light: #67E8F9;
+  --primary-dark: #0891B2;
+
+  --border: rgba(255,255,255,.65);
+
+  --shadow: rgba(15,23,42,.10);
+
+  --glow: rgba(34,211,238,.25);
+
+  --navbar: rgba(255,255,255,.72);
+
+  --badge: rgba(236,254,255,.90);
+
+  --button-from: #22D3EE;
+  --button-to: #38BDF8;
+
+  --hero-glow: rgba(125,211,252,.35);
+  --hero-glow-secondary: rgba(34,211,238,.18);
+
+  --sky-top: #ECFEFF;
+  --sky-middle: #BAE6FD;
+  --sky-bottom: #FFFFFF;
+
+  --ocean-top: #7DD3FC;
+  --ocean-bottom: #22D3EE;
+}
+
+:root.theme-night {
+
+  --bg: #020617;
+  --bg-secondary: #071A33;
+  --bg-tertiary: #0B2948;
+
+  --surface: rgba(15,23,42,.72);
+  --surface-hover: rgba(30,41,59,.85);
+
+  --text: #F8FAFC;
+  --text-secondary: #E2E8F0;
+  --text-muted: #94A3B8;
+
+  --primary: #22D3EE;
+  --primary-light: #67E8F9;
+  --primary-dark: #0891B2;
+
+  --border: rgba(71,85,105,.45);
+
+  --shadow: rgba(0,0,0,.40);
+
+  --glow: rgba(34,211,238,.20);
+
+  --navbar: rgba(15,23,42,.72);
+
+  --badge: rgba(30,41,59,.80);
+
+  --button-from: #0EA5E9;
+  --button-to: #2563EB;
+
+  --hero-glow: rgba(34,211,238,.20);
+  --hero-glow-secondary: rgba(96,165,250,.18);
+
+  --sky-top: #020617;
+  --sky-middle: #071A33;
+  --sky-bottom: #0B2948;
+
+  --ocean-top: #082F49;
+  --ocean-bottom: #020617;
+}
+
+/* ===========================================================
+   GLOBAL
+=========================================================== */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  transition:
+    background .8s ease,
+    color .8s ease;
+}
+
+/* ===========================================================
+   REUSABLE
+=========================================================== */
+
+.glass {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  backdrop-filter: blur(22px);
+  -webkit-backdrop-filter: blur(22px);
+  box-shadow: 0 20px 45px var(--shadow);
+  transition: .4s ease;
+}
+
+.glass:hover {
+  background: var(--surface-hover);
+}
+
+.text-primary {
+  color: var(--text);
+}
+
+.text-secondary {
+  color: var(--text-secondary);
+}
+
+.text-muted {
+  color: var(--text-muted);
+}
+
+.border-theme {
+  border-color: var(--border);
+}
+
+.bg-theme {
+  background: var(--bg);
+}
+
+.bg-surface {
+  background: var(--surface);
+}
+
+.badge-theme {
+  background: var(--badge);
+  border: 1px solid var(--border);
+  backdrop-filter: blur(20px);
+}
+
+.btn-theme {
+  background: linear-gradient(
+    135deg,
+    var(--button-from),
+    var(--button-to)
+  );
+
+  color: white;
+
+  transition: .35s;
+
+  box-shadow: 0 12px 35px var(--glow);
+}
+
+.btn-theme:hover {
+  transform: translateY(-3px);
+}
+
+.hero-glow {
+  background: var(--hero-glow);
+  filter: blur(150px);
+}
+
+.hero-glow-secondary {
+  background: var(--hero-glow-secondary);
+  filter: blur(120px);
+}
+
+/* ===========================================================
+   SCROLLBAR
+=========================================================== */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary);
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* ===========================================================
+   SELECTION
+=========================================================== */
+
+::selection {
+  background: var(--primary);
+  color: white;
+}
