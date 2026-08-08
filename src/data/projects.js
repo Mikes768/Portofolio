@@ -140,7 +140,7 @@ const projects = [
       "https://github.com/Mikes768/clinic-management-system",
 
     demo:
-      "https://clinic-management-system-gqm9sn6v6-mikel-personal-case.vercel.app/",
+      "https://clinic-management-system-16zxr7sao-mikel-personal-case.vercel.app/",
   },
 ];
 
