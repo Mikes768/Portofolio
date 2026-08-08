@@ -6,7 +6,7 @@ function HeroStats() {
   const { colors } = useTheme();
 
   return (
-    <div className="mt-14 grid grid-cols-3 gap-5">
+    <div className="mt-14 grid grid-cols-3 gap-2.5 sm:gap-5">
       {profile.stats.map((stat, index) => (
         <motion.div
           key={stat.label}
@@ -27,7 +27,7 @@ function HeroStats() {
             y: -8,
             scale: 1.04,
           }}
-          className="relative overflow-hidden rounded-3xl p-6 text-center transition-all duration-500"
+          className="relative overflow-hidden rounded-2xl p-3 text-center transition-all duration-500 sm:rounded-3xl sm:p-6"
           style={{
             background: colors.surface,
             border: `1px solid ${colors.border}`,
@@ -56,7 +56,7 @@ function HeroStats() {
               type: "spring",
               stiffness: 250,
             }}
-            className="relative text-4xl font-extrabold"
+            className="relative text-xl font-extrabold sm:text-4xl"
             style={{
               color: colors.primary,
             }}
@@ -66,7 +66,7 @@ function HeroStats() {
 
           {/* Label */}
           <p
-            className="relative mt-2 text-sm font-medium tracking-wide"
+            className="relative mt-1 wrap-break-word text-[11px] font-medium leading-tight tracking-wide sm:mt-2 sm:text-sm"
             style={{
               color: colors.textSecondary,
             }}

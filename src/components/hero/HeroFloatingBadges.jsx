@@ -49,7 +49,7 @@ function HeroFloatingBadges() {
 
   return (
     <motion.div
-      className="pointer-events-none absolute inset-0 z-30"
+      className="pointer-events-none absolute inset-0 z-30 hidden lg:block"
       animate={{
         y: [-15, 15, -15],
       }}

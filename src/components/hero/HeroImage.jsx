@@ -16,7 +16,7 @@ export default function HeroImage() {
         repeatType: "mirror",
         ease: "easeInOut",
       }}
-      className="relative flex h-[540px] w-[540px] items-center justify-center"
+      className="relative flex h-[220px] w-[220px] items-center justify-center sm:h-[320px] sm:w-[320px] md:h-[400px] md:w-[400px] lg:h-[420px] lg:w-[420px] xl:h-[540px] xl:w-[540px]"
     >
       {/* Main Glow */}
       <motion.div
@@ -29,10 +29,8 @@ export default function HeroImage() {
           repeat: Infinity,
           ease: "easeInOut",
         }}
-        className="absolute rounded-full blur-[140px]"
+        className="absolute h-[81%] w-[81%] rounded-full blur-[60px] sm:blur-[90px] xl:blur-[140px]"
         style={{
-          width: 440,
-          height: 440,
           background: isNight
             ? colors.heroGlow
             : "rgba(253,224,71,.35)",
@@ -50,10 +48,8 @@ export default function HeroImage() {
           repeat: Infinity,
           ease: "easeInOut",
         }}
-        className="absolute rounded-full blur-[180px]"
+        className="absolute h-[104%] w-[104%] rounded-full blur-[70px] sm:blur-[110px] xl:blur-[180px]"
         style={{
-          width: 560,
-          height: 560,
           background: colors.heroGlowSecondary,
         }}
       />
@@ -76,7 +72,7 @@ export default function HeroImage() {
             ease: "easeInOut",
           },
         }}
-        className="absolute h-[445px] w-[445px] rounded-full"
+        className="absolute h-[82%] w-[82%] rounded-full"
         style={{
           border: `1px solid ${colors.border}`,
           background: colors.surface,
@@ -96,7 +92,7 @@ export default function HeroImage() {
         className="relative z-20"
       >
         <div
-          className="rounded-full p-3"
+          className="rounded-full p-1.5 sm:p-2 xl:p-3"
           style={{
             background: colors.surface,
             border: `1px solid ${colors.border}`,
@@ -108,7 +104,7 @@ export default function HeroImage() {
             src={profile.image}
             alt={profile.name}
             draggable={false}
-            className="h-[410px] w-[410px] rounded-full border-[8px] object-cover select-none"
+            className="h-[166px] w-[166px] rounded-full border-[4px] object-cover select-none sm:h-[244px] sm:w-[244px] sm:border-[6px] md:h-[304px] md:w-[304px] lg:h-[320px] lg:w-[320px] xl:h-[410px] xl:w-[410px] xl:border-[8px]"
             style={{
               borderColor: isNight ? "#0f172a" : "#ffffff",
             }}
@@ -126,7 +122,7 @@ export default function HeroImage() {
           duration: 5,
           repeat: Infinity,
         }}
-        className="absolute left-24 top-20 h-28 w-28 rounded-full blur-3xl"
+        className="absolute left-8 top-6 h-10 w-10 rounded-full blur-2xl sm:left-16 sm:top-14 sm:h-16 sm:w-16 sm:blur-3xl xl:left-24 xl:top-20 xl:h-28 xl:w-28"
         style={{
           background: "rgba(255,255,255,.6)",
         }}
@@ -142,7 +138,7 @@ export default function HeroImage() {
           duration: 6,
           repeat: Infinity,
         }}
-        className="absolute bottom-6 h-20 w-72 rounded-full blur-[80px]"
+        className="absolute bottom-3 h-8 w-28 rounded-full blur-[40px] sm:bottom-4 sm:h-12 sm:w-40 sm:blur-[60px] xl:bottom-6 xl:h-20 xl:w-72 xl:blur-[80px]"
         style={{
           background: colors.primary,
         }}
