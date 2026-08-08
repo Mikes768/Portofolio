@@ -92,7 +92,7 @@ const projects = [
       "https://github.com/Mikes768/hr-recruitment-dashboard",
 
     demo:
-      "https://hr-recruitment-dashboard-4vpfy0uir-mikel-personal-case.vercel.app",
+      "https://hr-recruitment-dashboard-9w7uaml4t-mikel-personal-case.vercel.app",
   },
 
   {
