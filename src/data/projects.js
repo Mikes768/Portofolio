@@ -44,7 +44,7 @@ const projects = [
       "https://github.com/Mikes768/ecommerce-product-optimization",
 
     demo:
-      "https://ecommerce-product-optimization-el4tybfv1-mikel-personal-case.vercel.app/",
+      "https://ecommerce-product-optimization.vercel.app/",
   },
 
   {
@@ -92,7 +92,7 @@ const projects = [
       "https://github.com/Mikes768/hr-recruitment-dashboard",
 
     demo:
-      "https://hr-recruitment-dashboard-9w7uaml4t-mikel-personal-case.vercel.app",
+      "https://hr-recruitment-dashboard-two.vercel.app/dashboard",
   },
 
   {
